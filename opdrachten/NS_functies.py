@@ -30,7 +30,17 @@ def standaardprijs(afstandKM):
     Returns:
         float: De berekende standaardprijs.
     """
-    return
+   def standaardprijs(afstand_km):
+    if int(afstand_km) > 50:
+        treinritprijs = 15+int(afstand_km)*0.60
+        print('je prijs in €',round(treinritprijs,3))
+    elif int(afstand_km) <= -0:
+         print("dit is niet mogelijk")
+    else:
+        treinritprijs = 0.80*int(afstand_km)
+        print('je prijs in €',round(treinritprijs,3))
+        return treinritprijs
+    
 
 
 def ritprijs(leeftijd, weekendrit, afstandKM):
